@@ -231,7 +231,7 @@ public partial class Main : BasePage //這邊固定要繼承BasePage來取得公
         GridView1.EditIndex = -1;
         SQLCom("查詢");
     }
-
+    
     protected void SQLCom(String s)
     {
         SqlCommand cmd = new SqlCommand(); //宣告SqlCommand物件
@@ -241,7 +241,7 @@ public partial class Main : BasePage //這邊固定要繼承BasePage來取得公
         //以下try catch finally為固定寫法，且釋放資源必定要寫在finally裡
         //偵錯
         try
-        {            
+        {
             switch (s)
             {
                 //一般職員初始頁面
